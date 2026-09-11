@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Después: madera barnizada y brillante">
+  <rect width="800" height="500" fill="#eef0fe"/>
+  <rect x="150" y="90" width="500" height="320" rx="10" fill="#A855F7" stroke="#7C3AED" stroke-width="3" opacity="0.92"/>
+  <g stroke="#E9D5FF" stroke-width="8" stroke-linecap="round" opacity="0.8">
+    <path d="M200 130 L260 380"/>
+    <path d="M360 130 L420 380"/>
+    <path d="M520 130 L560 380"/>
+  </g>
+  <text x="400" y="470" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#6D28D9" text-anchor="middle">MADERA BARNIZADA</text>
+</svg>

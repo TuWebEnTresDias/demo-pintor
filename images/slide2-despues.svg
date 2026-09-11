@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Después: fachada pintada y prolija">
+  <rect width="800" height="500" fill="#eef0fe"/>
+  <rect x="160" y="60" width="480" height="380" rx="6" fill="#A5B4FC" stroke="#6366F1" stroke-width="3"/>
+  <g fill="#E0E7FF" stroke="#4F46E5" stroke-width="2">
+    <rect x="220" y="120" width="70" height="70" rx="4"/>
+    <rect x="510" y="120" width="70" height="70" rx="4"/>
+    <rect x="360" y="300" width="80" height="110" rx="4" fill="#C7D2FE"/>
+  </g>
+  <text x="400" y="470" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#4F46E5" text-anchor="middle">FACHADA PINTADA</text>
+</svg>

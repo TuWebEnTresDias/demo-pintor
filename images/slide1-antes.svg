@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Antes: pared descascarada y manchada">
+  <rect width="800" height="500" fill="#f1f5f9"/>
+  <rect x="120" y="60" width="560" height="380" rx="8" fill="#d8d8d2" stroke="#9ca3af" stroke-width="3"/>
+  <g stroke="#6b7280" stroke-width="3" fill="none">
+    <path d="M220 90 l30 80 l-20 70 l40 90"/>
+    <path d="M560 100 l-25 120 l30 100"/>
+  </g>
+  <g fill="#b9b9b0">
+    <path d="M300 250 q40 -30 80 0 q20 40 -20 60 q-60 10 -60 -60z"/>
+    <path d="M470 300 q30 -20 60 10 q10 30 -30 40 q-40 -10 -30 -50z"/>
+  </g>
+  <g fill="#a8a29e" opacity="0.7">
+    <circle cx="200" cy="380" r="26"/>
+    <circle cx="620" cy="360" r="20"/>
+  </g>
+  <text x="400" y="470" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#6b7280" text-anchor="middle">PARED SIN TRATAR</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Antes: madera sin tratar y opaca">
+  <rect width="800" height="500" fill="#f1f5f9"/>
+  <rect x="150" y="90" width="500" height="320" rx="10" fill="#b08968" stroke="#8d6e63" stroke-width="3"/>
+  <g stroke="#795548" stroke-width="3" fill="none" opacity="0.6">
+    <path d="M170 140 H630"/>
+    <path d="M170 200 H630"/>
+    <path d="M170 260 H630"/>
+    <path d="M170 320 H630"/>
+    <path d="M170 370 H630"/>
+  </g>
+  <text x="400" y="470" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#5d4037" text-anchor="middle">MADERA SIN TRATAR</text>
+</svg>
