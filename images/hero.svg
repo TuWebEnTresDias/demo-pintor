@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Fondo decorativo de pintura y pinceles">
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#e6e7fb" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#6366F1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="#eef0fe"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+
+  <g stroke-linecap="round" fill="none" opacity="0.85">
+    <path d="M120 700 q200 -40 380 -10 t360 -30" stroke="#C084FC" stroke-width="14"/>
+    <path d="M140 760 q220 30 420 0 t420 20" stroke="#A855F7" stroke-width="10" opacity="0.7"/>
+    <path d="M1320 200 q-120 60 -260 30 t-300 -10" stroke="#818CF8" stroke-width="12"/>
+  </g>
+
+  <g>
+    <circle cx="300" cy="220" r="40" fill="#6366F1"/>
+    <circle cx="380" cy="180" r="28" fill="#A855F7"/>
+    <circle cx="470" cy="250" r="34" fill="#34D399"/>
+    <circle cx="250" cy="320" r="26" fill="#FB7185"/>
+    <circle cx="430" cy="330" r="22" fill="#FBBF24"/>
+  </g>
+
+  <g transform="translate(900 240) rotate(-12)">
+    <path d="M0 40 q120 -60 300 -20 q120 30 240 -10 l0 70 q-120 40 -240 10 q-180 -40 -300 20 Z" fill="url(#stroke)" opacity="0.9"/>
+  </g>
+
+  <g transform="translate(1120 470)" stroke="#4F46E5" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="0" width="120" height="64" rx="12" fill="#E0E7FF"/>
+    <path d="M120 32 h44 a26 26 0 0 1 26 26 v18 a14 14 0 0 1 -14 14 h-56"/>
+    <path d="M60 0 V-70 a26 26 0 0 1 26 -26 h0 a26 26 0 0 1 26 26 v8"/>
+  </g>
+
+  <g transform="translate(150 540)" stroke="#4F46E5" stroke-width="4" fill="none">
+    <path d="M0 40 L110 -34 L220 40"/>
+    <rect x="24" y="40" width="172" height="150" fill="#E0E7FF" stroke="#6366F1"/>
+    <path d="M60 190 V120 H120 V190" stroke="#A855F7"/>
+    <rect x="140" y="70" width="44" height="44" rx="6" fill="#C084FC" stroke="#8B5CF6"/>
+  </g>
+</svg>

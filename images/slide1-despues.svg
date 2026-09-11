@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Después: pared pintada y renovada">
+  <rect width="800" height="500" fill="#eef0fe"/>
+  <rect x="120" y="60" width="560" height="380" rx="8" fill="#C7D2FE" stroke="#6366F1" stroke-width="3"/>
+  <g stroke="#A5B4FC" stroke-width="6" stroke-linecap="round" opacity="0.6">
+    <path d="M160 140 H640"/>
+    <path d="M160 220 H640"/>
+    <path d="M160 300 H640"/>
+    <path d="M160 380 H640"/>
+  </g>
+  <rect x="300" y="190" width="200" height="120" rx="8" fill="#818CF8" opacity="0.5"/>
+  <text x="400" y="470" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#4F46E5" text-anchor="middle">PARED PINTADA</text>
+</svg>
