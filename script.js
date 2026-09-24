@@ -31,10 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const phone = params.get('t');
   if (phone) {
-    const normalized = phone.replace(/[^\d]/g, '').replace(/^549/, '');
-    document.querySelectorAll('[data-whatsapp]').forEach((link) => {
-      link.href = `https://wa.me/549${normalized}?text=Hola%2C%20quiero%20contar%20mi%20proyecto%20de%20pintura`;
-    });
+    let normalized = phone.replace(/\D/g, '');
+    if (normalized.startsWith('549')) normalized = normalized.slice(3);
+    else if (normalized.startsWith('54')) normalized = normalized.slice(2).replace(/^0/, '');
+    else normalized = normalized.replace(/^0/, '');
+    if (normalized) {
+      document.querySelectorAll('[data-whatsapp]').forEach((link) => {
+        link.href = `https://wa.me/549${normalized}?text=Hola%2C%20quiero%20contar%20mi%20proyecto%20de%20pintura`;
+      });
+    }
   }
 
   document.querySelectorAll('details').forEach((item) => {
