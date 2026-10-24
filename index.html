@@ -1,6 +1,10 @@
 <!doctype html>
-<html lang="es-AR">
+<html data-personalized-demo lang="es-AR">
 <head>
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="base-uri 'self'; object-src 'none'; form-action 'none'">
+<script src="site-security.js"></script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pintura de interiores y exteriores | Demo</title>
@@ -114,7 +118,7 @@
               <label for="zona">¿En qué zona estás?</label>
               <input id="zona" name="zona" type="text" placeholder="Ej.: Palermo, CABA" required>
             </div>
-            <button class="button button-primary" type="submit">Continuar por WhatsApp <span aria-hidden="true">↗</span></button>
+            <button class="button button-primary" type="submit" disabled data-security-submit>Continuar por WhatsApp <span aria-hidden="true">↗</span></button>
           </form>
         </div>
         <a class="button button-primary contact-whatsapp" data-whatsapp href="https://wa.me/5491167967633?text=Hola%2C%20quiero%20contar%20mi%20proyecto%20de%20pintura">WhatsApp <span aria-hidden="true">↗</span></a>
@@ -123,6 +127,6 @@
   </main>
 
   <footer class="site-footer"><div class="shell footer-inner"><div><a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">/</span><strong data-dynamic="footer-brand">Pintura</strong></a><p>Demo conceptual para un servicio de pintura.</p></div><div><p class="footer-label">Recursos visuales</p><p>Imágenes: Pexels, hotlinked desde su CDN.</p></div><div><p class="footer-label">Creado por</p><a href="https://tuweben3dias.com" target="_blank" rel="noopener noreferrer">tuweben3dias.com ↗</a></div></div></footer>
-  <script src="./script.js"></script>
+  <script data-site-script src="./script.js"></script>
 </body>
 </html>

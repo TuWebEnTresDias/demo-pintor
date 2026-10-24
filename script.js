@@ -29,25 +29,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20), { passive: true });
 
-  const params = new URLSearchParams(window.location.search);
-  const brand = params.get('e') || params.get('n');
+  const params = new URLSearchParams(window.__DEMO_PARAMS__ ?? window.location.search);
+  const brand = params.get('e')?.trim().slice(0, 80) || params.get('n')?.trim().slice(0, 80);
   if (brand) {
     document.querySelectorAll('[data-dynamic]').forEach((element) => { element.textContent = brand; });
     document.title = `${brand} | Demo de pintura`;
   }
 
   const phone = params.get('t');
-  if (phone) {
-    let normalized = phone.replace(/\D/g, '');
-    if (normalized.startsWith('549')) normalized = normalized.slice(3);
-    else if (normalized.startsWith('54')) normalized = normalized.slice(2).replace(/^0/, '');
-    else normalized = normalized.replace(/^0/, '');
-    if (normalized) {
-      document.querySelectorAll('[data-whatsapp]').forEach((link) => {
-        link.href = `https://wa.me/549${normalized}?text=Hola%2C%20quiero%20contar%20mi%20proyecto%20de%20pintura`;
-      });
-    }
-  }
+  const normalized = window.SiteSecurity.normalizePhone(phone);
+  if (normalized) document.querySelectorAll('[data-whatsapp]').forEach(link => {
+    const url = new URL('https://wa.me/' + normalized.whatsapp);
+    url.searchParams.set('text', 'Hola, quiero contar mi proyecto de pintura');
+    link.href = url.href;
+  });
 
   const contactForm = document.querySelector('#contactForm');
   contactForm.addEventListener('submit', (event) => {
@@ -59,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const formData = new FormData(contactForm);
     const message = `Hola, quiero consultar por un proyecto de pintura. Necesito pintar: ${formData.get('proyecto').trim()}. Estoy en: ${formData.get('zona').trim()}.`;
     destination.searchParams.set('text', message);
-    window.location.assign(destination.href);
+    window.open(destination.href, '_blank', 'noopener,noreferrer');
   });
 
   document.querySelectorAll('details').forEach((item) => {
