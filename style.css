@@ -161,3 +161,30 @@ details p { max-width: 600px; margin: .9rem 2rem 0 0; color: var(--muted); }
 
 /* Visible contact shared by personalized demos. */
 .hero-contact{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem .9rem;margin:1rem 0;font:inherit}.hero-contact>span{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;opacity:.8}.hero-contact>a{display:inline-block;color:inherit;font-size:1.125rem;font-weight:700;text-decoration:underline;text-underline-offset:.22em;padding:.3rem 0}.hero-contact>a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+
+
+/* Acabado visual: cards independientes, esquinas suaves y microinteracciones. */
+.service-grid{gap:.8rem;border:0}
+.service-card{border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 22px rgba(23,25,20,.06);transition:transform .26s ease,box-shadow .26s ease,background .2s ease}
+.service-card-featured{border-color:transparent;box-shadow:0 12px 28px rgba(23,25,20,.14)}
+.service-card:hover,.service-card:focus-within{transform:translateY(-4px);box-shadow:0 16px 30px rgba(23,25,20,.12)}
+.service-card-featured:hover,.service-card-featured:focus-within{box-shadow:0 20px 36px rgba(23,25,20,.2)}
+.image-card{border-radius:18px;box-shadow:0 14px 30px rgba(23,25,20,.12)}
+.image-card img{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.image-card:hover img,.image-card:focus-within img{transform:scale(1.035)}
+.faq-list{border-top:0;display:grid;gap:.7rem}
+.faq-list details{overflow:hidden;border:1px solid var(--line);border-radius:13px;background:var(--white);box-shadow:0 6px 18px rgba(23,25,20,.05);transition:box-shadow .22s ease,border-color .22s ease}
+.faq-list details[open]{border-color:#b5c752;box-shadow:0 12px 26px rgba(23,25,20,.1)}
+.faq-list summary{padding:1rem 1.2rem;cursor:pointer}
+.faq-list details>p{margin:0;padding:0 1.2rem 1.1rem;color:var(--muted)}
+.contact-panel{overflow:hidden;border:1px solid rgba(217,243,106,.14);border-radius:22px;box-shadow:0 20px 44px rgba(23,25,20,.16)}
+.button{border-radius:8px;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.button:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(23,25,20,.13)}
+.contact-field input{border-radius:8px;transition:border-color .2s ease,box-shadow .2s ease}
+@keyframes paint-intro{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:no-preference){.hero-content{animation:paint-intro .65s ease both}}
+@media(prefers-reduced-motion:reduce){
+  .service-card,.image-card img,.faq-list details,.button,.contact-field input{transition:none}
+  .service-card:hover,.service-card:focus-within,.button:hover,.image-card:hover img,.image-card:focus-within img{transform:none}
+  .hero-content{animation:none}
+}
